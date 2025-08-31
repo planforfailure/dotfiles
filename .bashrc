@@ -75,4 +75,11 @@ alias x='exit'
 alias y='history'
 alias root="sudo -i"
 alias shred="shred -vuz" 
-
+alias ga="git add"
+alias gr="git rm"
+alias gc="git clone"
+alias gcm="git commit -m"
+alias gl="git pull"
+alias gp="git push"
+alias gs="git status"
+alias gd="git diff"
