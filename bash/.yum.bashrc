@@ -20,11 +20,10 @@ alias ls='ls --color=auto'
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
+# shell
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-
 alias ..='cd ..'
 alias ..2='cd ../..'
 alias ..3='cd ../../..'
@@ -40,7 +39,6 @@ alias cd4='cd ../../../..'
 alias cd5='cd ../../../../..'
 alias ce='crontab -e'
 alias cl='crontab -l'
-alias clean='s yum clean all'
 alias df='df -h'
 alias du='du -sh'
 alias duf='du -sh * | sort -hr'
@@ -50,29 +48,45 @@ alias g='grep'
 alias grep='grep --color=auto'
 alias h='htop'
 alias hg='history | grep '
-alias install='sudo yum install -y'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -lh'
 alias ls='ls --color=auto'
 alias lt='ls -ltrh'
 alias nmap='nmap -A -T4 -P0'
-#alias only='sudo yum-get install --only-upgrade'
 alias p='pwd'
 alias psg='ps -ef | grep'
-alias remove='sudo yum remove'
 alias rmf='sudo rm -f'
 alias rmr='sudo rm -Rf'
-alias rqa="rpm -qa"
 alias s='sudo'
-alias search='sudo yum search'
 alias t='top'
 alias tailf='tail -f'
-alias update='sudo yum update'
 alias x='exit'
 alias y='history'
 alias root="sudo -i"
 alias shred="shred -vuz" 
+
+# yum
+alias list="sudo yum list available"
+alias info="sudo yum info"
+alias provides="sudo yum provides"
+alias search="sudo yum search"
+alias check-update="sudo yum check-update" 
+alias repolist="sudo yum repolist" 
+alias makecache="sudo yum makecache"
+alias historylist="sudo yum history list"
+alias clean="sudo yum clean"
+alias install="sudo yum install -y"
+alias update="sudo yum update -y"
+alias upgrade="sudo yum upgrade -y"
+alias localinstall="sudo yum localinstall"
+alias downgrade="sudo yum downgrade"
+alias remove="sudo yum remove"
+alias autoremove="sudo yum autoremove"
+alias needs-restarting="sudo yum needs-restarting"
+alias show-installed="sudo yum show-installed"
+
+# git
 alias ga="git add"
 alias gr="git rm"
 alias gc="git clone"
@@ -81,3 +95,7 @@ alias gl="git pull"
 alias gp="git push"
 alias gs="git status"
 alias gd="git diff"
+alias co="git checkout"
+alias cob="git checkout -b"
+alias glp="git log --pretty"
+alias gm="git merge"
