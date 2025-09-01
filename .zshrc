@@ -89,6 +89,8 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git
 history
 ansible
+vault
+terraform
 )
 
 source $ZSH/oh-my-zsh.sh
