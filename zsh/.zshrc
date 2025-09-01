@@ -45,7 +45,7 @@ ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
- DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -120,9 +120,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- # enable color support of ls and also add handy aliases
-alias vi=vim
+# enable color support of ls and also add handy aliases
 
+# shell
+alias vi=vim
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -165,6 +166,33 @@ alias reboot="sudo systemctl reboot"
 alias pk9="s pkill -9"
 alias k9="kill -9"
 alias srn="s systemctl restart networking"
+alias 20="pwgen -s 20 1"
+alias 16="pwgen -s 16 1"
+alias 14="pwgen -s 14 1"
+alias 12="pwgen -s 12 1"
+alias temp="/home/$USER/scripts/pi_temp.sh"
+alias rm="shred -vuz"
+alias shred="shred -vuz"
+alias 256=sha256sum
+alias df="df -h"
+alias updatedb="s updatedb"
+alias pc="proxychains -q"
+autoload -U +X bashcompinit && bashcompinit
+
+# ansible
+alias lint="/home/$USER/.local/bin/ansible-lint"
+
+# apt
+alias update='sudo apt-get update'
+alias clean='s aptitude autoclean'
+alias upgrade='sudo apt-get upgrade -y'
+alias search='sudo apt-cache search'
+alias purge=' sudo apt-get purge'
+alias remove='sudo apt-get remove'
+alias only='sudo apt-get install --only-upgrade'
+alias install='sudo apt-get install -y'
+
+# git
 alias ga="git add"
 alias gr="git rm"
 alias gc="git clone"
@@ -173,22 +201,7 @@ alias gl="git pull"
 alias gp="git push"
 alias gs="git status"
 alias gd="git diff"
-alias lint="/home/$USER/.local/bin/ansible-lint"
-alias 20="pwgen -s 20 1"
-alias 16="pwgen -s 16 1"
-alias 14="pwgen -s 14 1"
-alias 12="pwgen -s 12 1"
-alias rm="shred -vuz"
-alias shred="shred -vuz"
-alias 256=sha256sum
-alias df="df -h"
-alias updatedb="s updatedb"
-alias clean='s aptitude autoclean'
-alias install='sudo apt-get install -y'
-alias only='sudo apt-get install --only-upgrade'
-alias purge=' sudo apt-get purge'
-alias remove='sudo apt-get remove'
-alias search='sudo apt-cache search'
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
-alias uy='sudo apt-get upgrade -y'
+alias co="git checkout"
+alias cob="git checkout -b"
+alias glp="git log --pretty"
+alias gm="git merge"
