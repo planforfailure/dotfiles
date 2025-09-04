@@ -215,4 +215,8 @@ alias co="git checkout"
 alias cob="git checkout -b"
 alias glp="git log --pretty"
 alias gm="git merge"
-
+alias blame="git blame"
+alias gbd="git branch -d"
+# git blame -L 2,5 README.md  # lines 2-5 (start/end)
+# git blame --since=3.months-- README.md # last 3 months
+#  git blame -e README.md  # email address
