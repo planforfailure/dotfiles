@@ -89,8 +89,10 @@ alias co="git checkout"
 alias cob="git checkout -b"
 alias glp="git log --pretty"
 alias gm="git merge"
+alias gmm="git merge main"
 alias blame="git blame"
 alias gbd="git branch -d"
+alias gb="git branch"
 alias gl1="git log --oneline"
 # git blame -L 2,5 README.md  # lines 2-5 (start/end)
 # git blame --since=3.months-- README.md # last 3 months
